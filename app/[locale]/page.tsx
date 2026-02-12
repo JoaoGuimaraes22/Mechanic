@@ -4,6 +4,7 @@ import type { Locale } from "../../i18n-config";
 import Navbar from "../components/Navbar/Navbar";
 import HeroContent from "../components/HeroContent/HeroContent";
 import About from "../components/About/About";
+import Services from "../components/Services/Services";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -36,12 +37,7 @@ export default async function Home({ params }: Props) {
 
       <About dict={dict.about} />
 
-      {/* Services — coming next */}
-      <section id="services" className="py-20 px-5 bg-slate-950">
-        <p className="text-center text-slate-400">
-          Services section coming soon
-        </p>
-      </section>
+      <Services dict={dict.services} />
 
       {/* Reviews — coming next */}
       <section id="reviews" className="py-20 px-5 bg-slate-900">
