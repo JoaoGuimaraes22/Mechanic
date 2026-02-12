@@ -1,0 +1,212 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "reviews": "Avaliações",
+    "contact": "Contacto",
+    "cta": "Pedir Orçamento"
+  },
+  "hero": {
+    "tagline": "Reparação Automóvel de Confiança Desde 2007",
+    "title": "Oficina Rodrigues",
+    "subtitle": "Reparações e manutenção automóvel honestas e fiáveis em Carcavelos. Empresa familiar, mecânicos certificados e preços transparentes — sem surpresas.",
+    "ctaPrimary": "Pedir Orçamento Grátis",
+    "ctaSecondary": "Ligar Agora",
+    "phone": "+351 214 000 000"
+  },
+  "about": {
+    "label": "Porquê Escolher-nos",
+    "title": "O Seu Carro Merece o Melhor Cuidado",
+    "paragraph1": "A Oficina Rodrigues é o nome de confiança em reparação automóvel em Carcavelos há mais de 17 anos. Fundada por António Rodrigues, mecânico certificado com mais de 30 anos de experiência, a nossa oficina familiar trata cada carro — e cada cliente — como se fosse nosso.",
+    "paragraph2": "Especializamo-nos em todas as principais marcas europeias: BMW, Mercedes, Audi, Volkswagen, Renault, Peugeot e mais. Desde mudanças de óleo de rotina a diagnósticos complexos de motor, usamos peças genuínas e o equipamento de diagnóstico mais recente para acertar à primeira.",
+    "paragraph3": "Sem taxas escondidas, sem reparações desnecessárias. Explicamos sempre o problema, mostramos o que precisa de ser reparado e damos um orçamento claro antes de qualquer trabalho começar. Esta é a promessa Rodrigues.",
+    "stat1Value": "17+",
+    "stat1Label": "Anos de Experiência",
+    "stat2Value": "4.9",
+    "stat2Label": "Avaliação Google",
+    "stat3Value": "2,500+",
+    "stat3Label": "Carros Reparados",
+    "stat4Value": "100%",
+    "stat4Label": "Preços Transparentes"
+  },
+  "services": {
+    "label": "O Que Fazemos",
+    "title": "Os Nossos Serviços",
+    "categories": {
+      "maintenance": "Manutenção",
+      "repair": "Reparações",
+      "diagnostics": "Diagnósticos",
+      "bodywork": "Chapa & Pintura"
+    },
+    "items": {
+      "maintenance": [
+        {
+          "name": "Mudança de Óleo e Filtro",
+          "description": "Mudança de óleo sintético com substituição de filtro.",
+          "price": "desde €45"
+        },
+        {
+          "name": "Serviço de Travões",
+          "description": "Inspeção e substituição de pastilhas, discos e fluido.",
+          "price": "desde €80"
+        },
+        {
+          "name": "Substituição Correia de Distribuição",
+          "description": "Serviço completo de correia e bomba de água.",
+          "price": "desde €250"
+        },
+        {
+          "name": "Serviço de Ar Condicionado",
+          "description": "Recarga completa, verificação de fugas e filtro de habitáculo.",
+          "price": "desde €65"
+        },
+        {
+          "name": "Revisão Completa (Prep. IPO)",
+          "description": "Inspeção e manutenção completa para passar a IPO.",
+          "price": "desde €120"
+        },
+        {
+          "name": "Troca e Balanceamento de Pneus",
+          "description": "Montagem, balanceamento e alinhamento — todas as marcas.",
+          "price": "desde €15/pneu"
+        }
+      ],
+      "repair": [
+        {
+          "name": "Reparação de Motor",
+          "description": "Desde pequenas reparações a reconstruções completas.",
+          "price": "orçamento"
+        },
+        {
+          "name": "Substituição de Embraiagem",
+          "description": "Kit de embraiagem completo com garantia.",
+          "price": "desde €350"
+        },
+        {
+          "name": "Suspensão e Direção",
+          "description": "Amortecedores, molas, rótulas e reparação de direção.",
+          "price": "desde €100"
+        },
+        {
+          "name": "Sistema de Escape",
+          "description": "Catalisador, panela de escape e reparação de tubos.",
+          "price": "desde €80"
+        },
+        {
+          "name": "Reparações Elétricas",
+          "description": "Bateria, alternador, motor de arranque e cablagem.",
+          "price": "desde €40"
+        },
+        {
+          "name": "Reparação de Caixa de Velocidades",
+          "description": "Serviço e reparação de transmissão manual e automática.",
+          "price": "orçamento"
+        }
+      ],
+      "diagnostics": [
+        {
+          "name": "Diagnóstico por Computador",
+          "description": "Scan OBD-II completo e análise de códigos de erro.",
+          "price": "€35"
+        },
+        {
+          "name": "Inspeção Pré-Compra",
+          "description": "Verificação completa antes de comprar um carro usado.",
+          "price": "€75"
+        },
+        {
+          "name": "Diagnóstico Luz de Motor",
+          "description": "Descubra exatamente porque a luz de aviso está acesa.",
+          "price": "€35"
+        },
+        {
+          "name": "Teste de Emissões",
+          "description": "Teste de fumo e verificação do sistema de emissões.",
+          "price": "€25"
+        }
+      ],
+      "bodywork": [
+        {
+          "name": "Reparação de Mossas",
+          "description": "Remoção de mossas sem pintura e bate-chapas.",
+          "price": "desde €50"
+        },
+        {
+          "name": "Reparação de Riscos",
+          "description": "Retoque de pintura e remoção de riscos.",
+          "price": "desde €40"
+        },
+        {
+          "name": "Pintura Completa",
+          "description": "Pintura de painel individual ou carro completo.",
+          "price": "orçamento"
+        },
+        {
+          "name": "Reparação de Para-choques",
+          "description": "Reparação de fissuras, repintura e substituição.",
+          "price": "desde €80"
+        }
+      ]
+    }
+  },
+  "reviews": {
+    "label": "O Que Dizem os Nossos Clientes",
+    "title": "A Confiança de Carcavelos",
+    "googleCta": "Ver Todas as Avaliações no Google",
+    "items": [
+      {
+        "name": "Miguel Santos",
+        "rating": 5,
+        "text": "Honestos e com preços justos. O António explicou tudo antes de começar. O meu BMW nunca andou tão bem. Recomendo.",
+        "date": "há 2 semanas"
+      },
+      {
+        "name": "Ana Ferreira",
+        "rating": 5,
+        "text": "Finalmente encontrei um mecânico de confiança! Resolveram um problema que duas outras oficinas não conseguiram diagnosticar. Preço justo, ótimo serviço.",
+        "date": "há 1 mês"
+      },
+      {
+        "name": "João Martins",
+        "rating": 5,
+        "text": "Venho aqui há 5 anos. Dizem sempre o que realmente precisa de ser reparado — sem tentar vender o que não é preciso. Toda a família é maravilhosa.",
+        "date": "há 3 semanas"
+      },
+      {
+        "name": "Carlos Mendes",
+        "rating": 5,
+        "text": "Levei o meu Renault com um problema estranho no motor. Em meia hora já tinham o diagnóstico e o orçamento. Trabalho impecável.",
+        "date": "há 1 mês"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Fale Connosco",
+    "title": "Visite-nos ou Peça um Orçamento",
+    "address": "Rua da Oficina 42, 2775-000 Carcavelos",
+    "phone": "+351 214 000 000",
+    "email": "info@oficinarodrigues.pt",
+    "hoursTitle": "Horário de Funcionamento",
+    "weekdays": "Seg – Sex: 8:30 – 18:30",
+    "saturday": "Sábado: 9:00 – 13:00",
+    "sunday": "Domingo: Encerrado",
+    "formName": "O Seu Nome",
+    "formEmail": "O Seu Email",
+    "formPhone": "O Seu Telefone",
+    "formCar": "Marca e Modelo do Carro",
+    "formMessage": "Descreva o problema ou serviço necessário",
+    "formSubmit": "Pedir Orçamento",
+    "formSuccess": "Mensagem enviada! Respondemos dentro de 24 horas."
+  },
+  "footer": {
+    "description": "Oficina automóvel familiar em Carcavelos. Serviço honesto, preços transparentes e mecânicos certificados desde 2007.",
+    "quickLinks": "Links Rápidos",
+    "followUs": "Siga-nos",
+    "copyright": "© 2025 Oficina Rodrigues. Todos os direitos reservados."
+  },
+  "callBar": {
+    "label": "Precisa de ajuda? Ligue agora",
+    "cta": "Ligar Agora"
+  }
+}

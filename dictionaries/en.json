@@ -1,0 +1,212 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "cta": "Get a Quote"
+  },
+  "hero": {
+    "tagline": "Trusted Auto Repair Since 2007",
+    "title": "Oficina Rodrigues",
+    "subtitle": "Honest, reliable car repairs and maintenance in Carcavelos. Family-owned, factory-trained mechanics, and transparent pricing — no surprises.",
+    "ctaPrimary": "Get a Free Quote",
+    "ctaSecondary": "Call Now",
+    "phone": "+351 214 000 000"
+  },
+  "about": {
+    "label": "Why Choose Us",
+    "title": "Your Car Deserves the Best Care",
+    "paragraph1": "Oficina Rodrigues has been the trusted name in auto repair in Carcavelos for over 17 years. Founded by António Rodrigues, a factory-trained mechanic with 30+ years of experience, our family-run shop treats every car — and every customer — like our own.",
+    "paragraph2": "We specialize in all major European brands: BMW, Mercedes, Audi, Volkswagen, Renault, Peugeot, and more. From routine oil changes to complex engine diagnostics, we use genuine parts and the latest diagnostic equipment to get it right the first time.",
+    "paragraph3": "No hidden fees, no unnecessary repairs. We always explain the problem, show you what needs fixing, and give you a clear quote before any work begins. That's the Rodrigues promise.",
+    "stat1Value": "17+",
+    "stat1Label": "Years in Business",
+    "stat2Value": "4.9",
+    "stat2Label": "Google Rating",
+    "stat3Value": "2,500+",
+    "stat3Label": "Cars Serviced",
+    "stat4Value": "100%",
+    "stat4Label": "Transparent Pricing"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Our Services",
+    "categories": {
+      "maintenance": "Maintenance",
+      "repair": "Repairs",
+      "diagnostics": "Diagnostics",
+      "bodywork": "Bodywork & Paint"
+    },
+    "items": {
+      "maintenance": [
+        {
+          "name": "Oil & Filter Change",
+          "description": "Full synthetic oil change with quality filter replacement.",
+          "price": "from €45"
+        },
+        {
+          "name": "Brake Service",
+          "description": "Pad and disc inspection, replacement, and fluid check.",
+          "price": "from €80"
+        },
+        {
+          "name": "Timing Belt Replacement",
+          "description": "Complete timing belt and water pump service.",
+          "price": "from €250"
+        },
+        {
+          "name": "Air Conditioning Service",
+          "description": "Full A/C regas, leak check, and cabin filter replacement.",
+          "price": "from €65"
+        },
+        {
+          "name": "Full Service (IPO Prep)",
+          "description": "Complete inspection and maintenance to pass IPO (MOT).",
+          "price": "from €120"
+        },
+        {
+          "name": "Tire Change & Balancing",
+          "description": "Mount, balance, and align — all brands available.",
+          "price": "from €15/tire"
+        }
+      ],
+      "repair": [
+        {
+          "name": "Engine Repair",
+          "description": "From minor fixes to full engine rebuilds.",
+          "price": "quote"
+        },
+        {
+          "name": "Clutch Replacement",
+          "description": "Complete clutch kit replacement with warranty.",
+          "price": "from €350"
+        },
+        {
+          "name": "Suspension & Steering",
+          "description": "Shocks, springs, ball joints, and steering rack repairs.",
+          "price": "from €100"
+        },
+        {
+          "name": "Exhaust System",
+          "description": "Catalytic converter, muffler, and exhaust pipe repairs.",
+          "price": "from €80"
+        },
+        {
+          "name": "Electrical Repairs",
+          "description": "Battery, alternator, starter motor, and wiring issues.",
+          "price": "from €40"
+        },
+        {
+          "name": "Gearbox Repair",
+          "description": "Manual and automatic transmission service and repair.",
+          "price": "quote"
+        }
+      ],
+      "diagnostics": [
+        {
+          "name": "Computer Diagnostics",
+          "description": "Full OBD-II scan and fault code analysis.",
+          "price": "€35"
+        },
+        {
+          "name": "Pre-Purchase Inspection",
+          "description": "Comprehensive check before you buy a used car.",
+          "price": "€75"
+        },
+        {
+          "name": "Engine Light Diagnosis",
+          "description": "Find out exactly why your warning light is on.",
+          "price": "€35"
+        },
+        {
+          "name": "Emissions Test",
+          "description": "Smoke test and emissions system check.",
+          "price": "€25"
+        }
+      ],
+      "bodywork": [
+        {
+          "name": "Dent Repair",
+          "description": "Paintless dent removal and panel beating.",
+          "price": "from €50"
+        },
+        {
+          "name": "Scratch Repair",
+          "description": "Paint touch-up and scratch removal.",
+          "price": "from €40"
+        },
+        {
+          "name": "Full Respray",
+          "description": "Complete panel or full car paint job.",
+          "price": "quote"
+        },
+        {
+          "name": "Bumper Repair",
+          "description": "Crack repair, repainting, and replacement.",
+          "price": "from €80"
+        }
+      ]
+    }
+  },
+  "reviews": {
+    "label": "What Our Customers Say",
+    "title": "Trusted by Carcavelos",
+    "googleCta": "See All Reviews on Google",
+    "items": [
+      {
+        "name": "Miguel Santos",
+        "rating": 5,
+        "text": "Honest and fair pricing. António explained everything before starting work. My BMW has never run better. Highly recommend.",
+        "date": "2 weeks ago"
+      },
+      {
+        "name": "Ana Ferreira",
+        "rating": 5,
+        "text": "Finally found a mechanic I trust! They fixed an issue two other shops couldn't diagnose. Fair price, great service.",
+        "date": "1 month ago"
+      },
+      {
+        "name": "João Martins",
+        "rating": 5,
+        "text": "Been coming here for 5 years. They always tell you what actually needs fixing — no upselling. The whole family is wonderful.",
+        "date": "3 weeks ago"
+      },
+      {
+        "name": "Sarah Mitchell",
+        "rating": 5,
+        "text": "As an expat, finding a trustworthy mechanic was stressful. António speaks some English and was incredibly patient. Saved me hundreds.",
+        "date": "1 month ago"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Visit Us or Request a Quote",
+    "address": "Rua da Oficina 42, 2775-000 Carcavelos",
+    "phone": "+351 214 000 000",
+    "email": "info@oficinarodrigues.pt",
+    "hoursTitle": "Opening Hours",
+    "weekdays": "Mon – Fri: 8:30 – 18:30",
+    "saturday": "Saturday: 9:00 – 13:00",
+    "sunday": "Sunday: Closed",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formPhone": "Your Phone",
+    "formCar": "Car Make & Model",
+    "formMessage": "Describe the issue or service needed",
+    "formSubmit": "Request Quote",
+    "formSuccess": "Message sent! We'll get back to you within 24 hours."
+  },
+  "footer": {
+    "description": "Family-owned auto repair in Carcavelos. Honest service, transparent pricing, and factory-trained mechanics since 2007.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 Oficina Rodrigues. All rights reserved."
+  },
+  "callBar": {
+    "label": "Need help? Call us now",
+    "cta": "Call Now"
+  }
+}
