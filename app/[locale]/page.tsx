@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import HeroContent from "../components/HeroContent/HeroContent";
 import About from "../components/About/About";
 import Services from "../components/Services/Services";
+import Reviews from "../components/Reviews/Reviews";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -39,12 +40,7 @@ export default async function Home({ params }: Props) {
 
       <Services dict={dict.services} />
 
-      {/* Reviews — coming next */}
-      <section id="reviews" className="py-20 px-5 bg-slate-900">
-        <p className="text-center text-slate-400">
-          Reviews section coming soon
-        </p>
-      </section>
+      <Reviews dict={dict.reviews} />
 
       {/* Contact — coming next */}
       <section id="contact" className="py-20 px-5 bg-slate-950">
