@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { i18n } from "../../i18n-config";
 import "../globals.css";
 
-const siteUrl = "https://oficina-rodrigues.vercel.app";
+const siteUrl = "https://revicar.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -12,14 +12,14 @@ export const viewport: Viewport = {
 
 const meta = {
   en: {
-    title: "Oficina Rodrigues | Auto Repair | Carcavelos",
+    title: "Revicar | Auto Repair | Carcavelos",
     description:
-      "Trusted family-owned auto repair in Carcavelos. Factory-trained mechanics, transparent pricing, and honest service since 2007.",
+      "Multi-brand auto repair shop in Carcavelos. Mechanics, bodywork & paint, electrical, air conditioning, and tyres. Transparent pricing.",
   },
   pt: {
-    title: "Oficina Rodrigues | Reparação Automóvel | Carcavelos",
+    title: "Revicar | Reparações Automóveis | Carcavelos",
     description:
-      "Oficina automóvel familiar de confiança em Carcavelos. Mecânicos certificados, preços transparentes e serviço honesto desde 2007.",
+      "Oficina de reparação automóvel multi-marcas em Carcavelos. Mecânica, chapa e pintura, eletricista, climatização e pneus. Preços transparentes.",
   },
 };
 
@@ -50,7 +50,7 @@ export async function generateMetadata({
       title: t.title,
       description: t.description,
       url: `${siteUrl}/${locale}`,
-      siteName: "Oficina Rodrigues",
+      siteName: "Revicar",
       locale: locale === "pt" ? "pt_PT" : "en_US",
       type: "website",
       images: [
@@ -58,7 +58,7 @@ export async function generateMetadata({
           url: "/img/hero.png",
           width: 1200,
           height: 630,
-          alt: "Oficina Rodrigues — Auto Repair, Carcavelos",
+          alt: "Revicar — Reparações Automóveis, Carcavelos",
         },
       ],
     },
@@ -78,21 +78,21 @@ export async function generateMetadata({
             "oficina carcavelos",
             "mecânico carcavelos",
             "reparação automóvel",
-            "revisão carro",
+            "chapa e pintura",
+            "pneus",
+            "ar condicionado auto",
             "diagnóstico automóvel",
-            "mudança óleo",
-            "travões",
-            "oficina rodrigues",
+            "revicar",
           ]
         : [
             "auto repair carcavelos",
             "mechanic carcavelos",
             "car repair",
-            "car service",
+            "bodywork paint",
+            "tyres",
+            "car air conditioning",
             "car diagnostics",
-            "oil change",
-            "brakes",
-            "oficina rodrigues",
+            "revicar",
           ],
   };
 }
@@ -108,21 +108,21 @@ export default async function LocaleLayout({ children, params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    name: "Oficina Rodrigues",
+    name: "Revicar — Reparações Automóveis",
     description: locale === "pt" ? meta.pt.description : meta.en.description,
     url: `${siteUrl}/${locale}`,
-    telephone: "+351214000000",
+    telephone: "+351214578709",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Rua da Oficina 42",
+      streetAddress: "R. Plácido de Abreu 2",
       addressLocality: "Carcavelos",
-      postalCode: "2775-000",
+      postalCode: "2775-617",
       addressCountry: "PT",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 38.6893,
-      longitude: -9.3321,
+      latitude: 38.6879,
+      longitude: -9.3305,
     },
     openingHoursSpecification: [
       {

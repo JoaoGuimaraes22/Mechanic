@@ -68,7 +68,7 @@ export default function Navbar({ dict, locale }: Props) {
           className="text-xl sm:text-2xl font-bold text-white"
           style={{ fontFamily: "'Oswald', sans-serif" }}
         >
-          OFICINA<span className="text-red-500">.</span>RODRIGUES
+          REVI<span className="text-red-500">CAR</span>
         </a>
 
         {/* Desktop Links */}

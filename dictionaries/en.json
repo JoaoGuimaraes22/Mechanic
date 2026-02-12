@@ -8,25 +8,25 @@
     "cta": "Get a Quote"
   },
   "hero": {
-    "tagline": "Trusted Auto Repair Since 2007",
-    "title": "Oficina Rodrigues",
-    "subtitle": "Honest, reliable car repairs and maintenance in Carcavelos. Family-owned, factory-trained mechanics, and transparent pricing — no surprises.",
+    "tagline": "Multi-Brand Auto Repair",
+    "title": "Revicar",
+    "subtitle": "We are an auto repair shop that works with all major brands. We offer Mechanics, Bodywork & Paint, Electrical, Air Conditioning, and Tyre services.",
     "ctaPrimary": "Get a Free Quote",
     "ctaSecondary": "Call Now",
-    "phone": "+351 214 000 000"
+    "phone": "+351 214 578 709"
   },
   "about": {
     "label": "Why Choose Us",
-    "title": "Your Car Deserves the Best Care",
-    "paragraph1": "Oficina Rodrigues has been the trusted name in auto repair in Carcavelos for over 17 years. Founded by António Rodrigues, a factory-trained mechanic with 30+ years of experience, our family-run shop treats every car — and every customer — like our own.",
-    "paragraph2": "We specialize in all major European brands: BMW, Mercedes, Audi, Volkswagen, Renault, Peugeot, and more. From routine oil changes to complex engine diagnostics, we use genuine parts and the latest diagnostic equipment to get it right the first time.",
-    "paragraph3": "No hidden fees, no unnecessary repairs. We always explain the problem, show you what needs fixing, and give you a clear quote before any work begins. That's the Rodrigues promise.",
-    "stat1Value": "17+",
-    "stat1Label": "Years in Business",
+    "title": "Your Car In Good Hands",
+    "paragraph1": "Revicar is your trusted auto repair shop in Carcavelos. We work with all major car brands, offering a complete and professional service to keep your car in the best possible condition.",
+    "paragraph2": "Our services include multi-brand general mechanics, bodywork and paint, auto electrical, air conditioning, and tyres. We also carry out warranty services and electronic diagnostic testing to identify any problem with precision.",
+    "paragraph3": "At Revicar, transparency and trust are our core values. We always explain the issue, present a clear quote, and only proceed with your approval. Your car deserves the best care.",
+    "stat1Value": "Multi",
+    "stat1Label": "Brands",
     "stat2Value": "4.9",
     "stat2Label": "Google Rating",
-    "stat3Value": "2,500+",
-    "stat3Label": "Cars Serviced",
+    "stat3Value": "1,000+",
+    "stat3Label": "Cars Repaired",
     "stat4Value": "100%",
     "stat4Label": "Transparent Pricing"
   },
@@ -42,168 +42,168 @@
     "items": {
       "maintenance": [
         {
+          "name": "Air Conditioning",
+          "description": "Recharge, leak detection, and full A/C system repair.",
+          "price": "quote"
+        },
+        {
+          "name": "Battery",
+          "description": "Testing, replacement, and charging system diagnostics.",
+          "price": "quote"
+        },
+        {
+          "name": "Tyres",
+          "description": "Replacement, balancing, and alignment for all brands.",
+          "price": "quote"
+        },
+        {
+          "name": "Warranty Services",
+          "description": "Full services that maintain your manufacturer warranty.",
+          "price": "quote"
+        },
+        {
           "name": "Oil & Filter Change",
-          "description": "Full synthetic oil change with quality filter replacement.",
-          "price": "from €45"
+          "description": "Quality synthetic oil with filter replacement.",
+          "price": "quote"
         },
         {
           "name": "Brake Service",
-          "description": "Pad and disc inspection, replacement, and fluid check.",
-          "price": "from €80"
-        },
-        {
-          "name": "Timing Belt Replacement",
-          "description": "Complete timing belt and water pump service.",
-          "price": "from €250"
-        },
-        {
-          "name": "Air Conditioning Service",
-          "description": "Full A/C regas, leak check, and cabin filter replacement.",
-          "price": "from €65"
-        },
-        {
-          "name": "Full Service (IPO Prep)",
-          "description": "Complete inspection and maintenance to pass IPO (MOT).",
-          "price": "from €120"
-        },
-        {
-          "name": "Tire Change & Balancing",
-          "description": "Mount, balance, and align — all brands available.",
-          "price": "from €15/tire"
+          "description": "Inspection and replacement of pads, discs, and fluid.",
+          "price": "quote"
         }
       ],
       "repair": [
         {
           "name": "Engine Repair",
-          "description": "From minor fixes to full engine rebuilds.",
+          "description": "From minor repairs to complete engine rebuilds.",
           "price": "quote"
         },
         {
-          "name": "Clutch Replacement",
-          "description": "Complete clutch kit replacement with warranty.",
-          "price": "from €350"
+          "name": "Multi-Brand General Mechanics",
+          "description": "Complete mechanical service for all car brands.",
+          "price": "quote"
+        },
+        {
+          "name": "Auto Electrical",
+          "description": "Diagnosis and repair of electrical and electronic issues.",
+          "price": "quote"
         },
         {
           "name": "Suspension & Steering",
-          "description": "Shocks, springs, ball joints, and steering rack repairs.",
-          "price": "from €100"
+          "description": "Shock absorbers, springs, ball joints, and steering repair.",
+          "price": "quote"
         },
         {
           "name": "Exhaust System",
-          "description": "Catalytic converter, muffler, and exhaust pipe repairs.",
-          "price": "from €80"
+          "description": "Catalytic converter, muffler, and pipe repair.",
+          "price": "quote"
         },
         {
-          "name": "Electrical Repairs",
-          "description": "Battery, alternator, starter motor, and wiring issues.",
-          "price": "from €40"
-        },
-        {
-          "name": "Gearbox Repair",
-          "description": "Manual and automatic transmission service and repair.",
+          "name": "Clutch & Gearbox",
+          "description": "Clutch replacement and gearbox repair.",
           "price": "quote"
         }
       ],
       "diagnostics": [
         {
-          "name": "Computer Diagnostics",
-          "description": "Full OBD-II scan and fault code analysis.",
-          "price": "€35"
-        },
-        {
-          "name": "Pre-Purchase Inspection",
-          "description": "Comprehensive check before you buy a used car.",
-          "price": "€75"
+          "name": "Electronic Diagnostic Test",
+          "description": "Full electronic check with state-of-the-art equipment.",
+          "price": "quote"
         },
         {
           "name": "Engine Light Diagnosis",
-          "description": "Find out exactly why your warning light is on.",
-          "price": "€35"
+          "description": "Precise identification of what's triggering the warning light.",
+          "price": "quote"
+        },
+        {
+          "name": "Pre-Purchase Inspection",
+          "description": "Full vehicle check before buying a used car.",
+          "price": "quote"
         },
         {
           "name": "Emissions Test",
-          "description": "Smoke test and emissions system check.",
-          "price": "€25"
+          "description": "Emissions system check and MOT preparation.",
+          "price": "quote"
         }
       ],
       "bodywork": [
         {
+          "name": "Bodywork & Paint",
+          "description": "Full panel beating and professional auto painting.",
+          "price": "quote"
+        },
+        {
           "name": "Dent Repair",
-          "description": "Paintless dent removal and panel beating.",
-          "price": "from €50"
+          "description": "Professional dent removal and panel repair.",
+          "price": "quote"
         },
         {
           "name": "Scratch Repair",
           "description": "Paint touch-up and scratch removal.",
-          "price": "from €40"
-        },
-        {
-          "name": "Full Respray",
-          "description": "Complete panel or full car paint job.",
           "price": "quote"
         },
         {
           "name": "Bumper Repair",
-          "description": "Crack repair, repainting, and replacement.",
-          "price": "from €80"
+          "description": "Crack repair, respray, and replacement.",
+          "price": "quote"
         }
       ]
     }
   },
   "reviews": {
     "label": "What Our Customers Say",
-    "title": "Trusted by Carcavelos",
+    "title": "Trusted In Carcavelos",
     "googleCta": "See All Reviews on Google",
     "items": [
       {
         "name": "Miguel Santos",
         "rating": 5,
-        "text": "Honest and fair pricing. António explained everything before starting work. My BMW has never run better. Highly recommend.",
+        "text": "Excellent garage! Fast and professional service. They explained everything before starting the work. Highly recommend.",
         "date": "2 weeks ago"
       },
       {
         "name": "Ana Ferreira",
         "rating": 5,
-        "text": "Finally found a mechanic I trust! They fixed an issue two other shops couldn't diagnose. Fair price, great service.",
+        "text": "Finally found a trustworthy garage in Carcavelos. Fair price and impeccable bodywork and paint job.",
         "date": "1 month ago"
       },
       {
         "name": "João Martins",
         "rating": 5,
-        "text": "Been coming here for 5 years. They always tell you what actually needs fixing — no upselling. The whole family is wonderful.",
+        "text": "I've been coming here for years. They work with any brand and always tell you what actually needs fixing.",
         "date": "3 weeks ago"
       },
       {
-        "name": "Sarah Mitchell",
+        "name": "Carlos Mendes",
         "rating": 5,
-        "text": "As an expat, finding a trustworthy mechanic was stressful. António speaks some English and was incredibly patient. Saved me hundreds.",
+        "text": "Brought my car in with a strange engine issue. The electronic diagnostic found everything in minutes. Great work.",
         "date": "1 month ago"
       }
     ]
   },
   "contact": {
-    "label": "Get in Touch",
+    "label": "Get In Touch",
     "title": "Visit Us or Request a Quote",
-    "address": "Rua da Oficina 42, 2775-000 Carcavelos",
-    "phone": "+351 214 000 000",
-    "email": "info@oficinarodrigues.pt",
+    "address": "R. Plácido de Abreu 2, 2775-617 Carcavelos",
+    "phone": "+351 214 578 709",
+    "email": "info@revicar.pt",
     "hoursTitle": "Opening Hours",
-    "weekdays": "Mon – Fri: 8:30 – 18:30",
-    "saturday": "Saturday: 9:00 – 13:00",
+    "weekdays": "Mon – Fri: 8:30 AM – 6:30 PM",
+    "saturday": "Saturday: 9:00 AM – 1:00 PM",
     "sunday": "Sunday: Closed",
     "formName": "Your Name",
     "formEmail": "Your Email",
     "formPhone": "Your Phone",
     "formCar": "Car Make & Model",
     "formMessage": "Describe the issue or service needed",
-    "formSubmit": "Request Quote",
+    "formSubmit": "Request a Quote",
     "formSuccess": "Message sent! We'll get back to you within 24 hours."
   },
   "footer": {
-    "description": "Family-owned auto repair in Carcavelos. Honest service, transparent pricing, and factory-trained mechanics since 2007.",
+    "description": "Multi-brand auto repair shop in Carcavelos. Mechanics, bodywork & paint, electrical, air conditioning, and tyres.",
     "quickLinks": "Quick Links",
     "followUs": "Follow Us",
-    "copyright": "© 2025 Oficina Rodrigues. All rights reserved."
+    "copyright": "© 2025 Revicar — Auto Repair. All rights reserved."
   },
   "callBar": {
     "label": "Need help? Call us now",

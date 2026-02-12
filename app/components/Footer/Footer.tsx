@@ -30,7 +30,7 @@ export default function Footer({ dict, navDict, locale }: Props) {
               className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
-              OFICINA<span className="text-red-500">.</span>RODRIGUES
+              REVI<span className="text-red-500">CAR</span>
             </h3>
             <p className="text-sm leading-relaxed max-w-xs">
               {dict.description}

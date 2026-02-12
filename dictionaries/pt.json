@@ -8,24 +8,24 @@
     "cta": "Pedir Orçamento"
   },
   "hero": {
-    "tagline": "Reparação Automóvel de Confiança Desde 2007",
-    "title": "Oficina Rodrigues",
-    "subtitle": "Reparações e manutenção automóvel honestas e fiáveis em Carcavelos. Empresa familiar, mecânicos certificados e preços transparentes — sem surpresas.",
+    "tagline": "Reparação Automóvel Multi-Marcas",
+    "title": "Revicar",
+    "subtitle": "Somos uma oficina de reparação automóvel que trabalha com as mais diversas marcas. Estamos ao seu dispor com serviços de Mecânica, Chapa e Pintura, Eletricista, Climatização e Pneus.",
     "ctaPrimary": "Pedir Orçamento Grátis",
     "ctaSecondary": "Ligar Agora",
-    "phone": "+351 214 000 000"
+    "phone": "+351 214 578 709"
   },
   "about": {
     "label": "Porquê Escolher-nos",
-    "title": "O Seu Carro Merece o Melhor Cuidado",
-    "paragraph1": "A Oficina Rodrigues é o nome de confiança em reparação automóvel em Carcavelos há mais de 17 anos. Fundada por António Rodrigues, mecânico certificado com mais de 30 anos de experiência, a nossa oficina familiar trata cada carro — e cada cliente — como se fosse nosso.",
-    "paragraph2": "Especializamo-nos em todas as principais marcas europeias: BMW, Mercedes, Audi, Volkswagen, Renault, Peugeot e mais. Desde mudanças de óleo de rotina a diagnósticos complexos de motor, usamos peças genuínas e o equipamento de diagnóstico mais recente para acertar à primeira.",
-    "paragraph3": "Sem taxas escondidas, sem reparações desnecessárias. Explicamos sempre o problema, mostramos o que precisa de ser reparado e damos um orçamento claro antes de qualquer trabalho começar. Esta é a promessa Rodrigues.",
-    "stat1Value": "17+",
-    "stat1Label": "Anos de Experiência",
+    "title": "O Seu Carro Em Boas Mãos",
+    "paragraph1": "A Revicar é a sua oficina de reparação automóvel de confiança em Carcavelos. Trabalhamos com as mais diversas marcas, oferecendo um serviço completo e profissional para que o seu carro esteja sempre nas melhores condições.",
+    "paragraph2": "Os nossos serviços incluem mecânica geral multi-marcas, chapa e pintura, eletricista automóvel, climatização e pneus. Realizamos também revisões em garantia e teste diagnóstico com verificação eletrónica para identificar qualquer problema com precisão.",
+    "paragraph3": "Na Revicar, a transparência e a confiança são os nossos valores fundamentais. Explicamos sempre o problema, apresentamos um orçamento claro e só avançamos com a sua aprovação. O seu carro merece o melhor cuidado.",
+    "stat1Value": "Multi",
+    "stat1Label": "Marcas",
     "stat2Value": "4.9",
     "stat2Label": "Avaliação Google",
-    "stat3Value": "2,500+",
+    "stat3Value": "1000+",
     "stat3Label": "Carros Reparados",
     "stat4Value": "100%",
     "stat4Label": "Preços Transparentes"
@@ -42,110 +42,110 @@
     "items": {
       "maintenance": [
         {
-          "name": "Mudança de Óleo e Filtro",
-          "description": "Mudança de óleo sintético com substituição de filtro.",
-          "price": "desde €45"
+          "name": "Ar Condicionado",
+          "description": "Recarga, verificação de fugas e reparação do sistema de climatização.",
+          "price": "consultar"
+        },
+        {
+          "name": "Bateria",
+          "description": "Teste, substituição e diagnóstico do sistema de carga.",
+          "price": "consultar"
+        },
+        {
+          "name": "Pneus",
+          "description": "Troca, balanceamento e alinhamento de todas as marcas.",
+          "price": "consultar"
+        },
+        {
+          "name": "Revisões em Garantia",
+          "description": "Revisões completas mantendo a garantia do fabricante.",
+          "price": "consultar"
+        },
+        {
+          "name": "Mudança de Óleo e Filtros",
+          "description": "Óleo sintético de qualidade com substituição de filtros.",
+          "price": "consultar"
         },
         {
           "name": "Serviço de Travões",
           "description": "Inspeção e substituição de pastilhas, discos e fluido.",
-          "price": "desde €80"
-        },
-        {
-          "name": "Substituição Correia de Distribuição",
-          "description": "Serviço completo de correia e bomba de água.",
-          "price": "desde €250"
-        },
-        {
-          "name": "Serviço de Ar Condicionado",
-          "description": "Recarga completa, verificação de fugas e filtro de habitáculo.",
-          "price": "desde €65"
-        },
-        {
-          "name": "Revisão Completa (Prep. IPO)",
-          "description": "Inspeção e manutenção completa para passar a IPO.",
-          "price": "desde €120"
-        },
-        {
-          "name": "Troca e Balanceamento de Pneus",
-          "description": "Montagem, balanceamento e alinhamento — todas as marcas.",
-          "price": "desde €15/pneu"
+          "price": "consultar"
         }
       ],
       "repair": [
         {
           "name": "Reparação de Motor",
           "description": "Desde pequenas reparações a reconstruções completas.",
-          "price": "orçamento"
+          "price": "consultar"
         },
         {
-          "name": "Substituição de Embraiagem",
-          "description": "Kit de embraiagem completo com garantia.",
-          "price": "desde €350"
+          "name": "Mecânica Geral Multi-Marcas",
+          "description": "Serviço completo para todas as marcas automóveis.",
+          "price": "consultar"
+        },
+        {
+          "name": "Eletricista Automóvel",
+          "description": "Diagnóstico e reparação de problemas elétricos e eletrónicos.",
+          "price": "consultar"
         },
         {
           "name": "Suspensão e Direção",
           "description": "Amortecedores, molas, rótulas e reparação de direção.",
-          "price": "desde €100"
+          "price": "consultar"
         },
         {
           "name": "Sistema de Escape",
           "description": "Catalisador, panela de escape e reparação de tubos.",
-          "price": "desde €80"
+          "price": "consultar"
         },
         {
-          "name": "Reparações Elétricas",
-          "description": "Bateria, alternador, motor de arranque e cablagem.",
-          "price": "desde €40"
-        },
-        {
-          "name": "Reparação de Caixa de Velocidades",
-          "description": "Serviço e reparação de transmissão manual e automática.",
-          "price": "orçamento"
+          "name": "Embraiagem e Caixa",
+          "description": "Substituição de embraiagem e reparação de caixa de velocidades.",
+          "price": "consultar"
         }
       ],
       "diagnostics": [
         {
-          "name": "Diagnóstico por Computador",
-          "description": "Scan OBD-II completo e análise de códigos de erro.",
-          "price": "€35"
+          "name": "Teste Diagnóstico Eletrónico",
+          "description": "Verificação eletrónica completa com equipamento de última geração.",
+          "price": "consultar"
+        },
+        {
+          "name": "Diagnóstico Luz de Motor",
+          "description": "Identificação precisa do problema quando a luz de aviso acende.",
+          "price": "consultar"
         },
         {
           "name": "Inspeção Pré-Compra",
           "description": "Verificação completa antes de comprar um carro usado.",
-          "price": "€75"
-        },
-        {
-          "name": "Diagnóstico Luz de Motor",
-          "description": "Descubra exatamente porque a luz de aviso está acesa.",
-          "price": "€35"
+          "price": "consultar"
         },
         {
           "name": "Teste de Emissões",
-          "description": "Teste de fumo e verificação do sistema de emissões.",
-          "price": "€25"
+          "description": "Verificação do sistema de emissões e preparação para IPO.",
+          "price": "consultar"
         }
       ],
       "bodywork": [
         {
+          "name": "Chapa e Pintura",
+          "description": "Serviço completo de bate-chapas e pintura automóvel.",
+          "price": "consultar"
+        },
+        {
           "name": "Reparação de Mossas",
-          "description": "Remoção de mossas sem pintura e bate-chapas.",
-          "price": "desde €50"
+          "description": "Remoção de mossas e bate-chapas profissional.",
+          "price": "consultar"
         },
         {
           "name": "Reparação de Riscos",
           "description": "Retoque de pintura e remoção de riscos.",
-          "price": "desde €40"
-        },
-        {
-          "name": "Pintura Completa",
-          "description": "Pintura de painel individual ou carro completo.",
-          "price": "orçamento"
+          "price": "consultar"
         },
         {
           "name": "Reparação de Para-choques",
           "description": "Reparação de fissuras, repintura e substituição.",
-          "price": "desde €80"
+          "price": "consultar"
         }
       ]
     }
@@ -158,25 +158,25 @@
       {
         "name": "Miguel Santos",
         "rating": 5,
-        "text": "Honestos e com preços justos. O António explicou tudo antes de começar. O meu BMW nunca andou tão bem. Recomendo.",
+        "text": "Excelente oficina! Serviço rápido e profissional. Explicaram tudo antes de começar o trabalho. Recomendo.",
         "date": "há 2 semanas"
       },
       {
         "name": "Ana Ferreira",
         "rating": 5,
-        "text": "Finalmente encontrei um mecânico de confiança! Resolveram um problema que duas outras oficinas não conseguiram diagnosticar. Preço justo, ótimo serviço.",
+        "text": "Finalmente encontrei uma oficina de confiança em Carcavelos. Preço justo e trabalho impecável na chapa e pintura.",
         "date": "há 1 mês"
       },
       {
         "name": "João Martins",
         "rating": 5,
-        "text": "Venho aqui há 5 anos. Dizem sempre o que realmente precisa de ser reparado — sem tentar vender o que não é preciso. Toda a família é maravilhosa.",
+        "text": "Venho aqui há anos. Trabalham com qualquer marca e dizem sempre o que realmente precisa de ser reparado.",
         "date": "há 3 semanas"
       },
       {
         "name": "Carlos Mendes",
         "rating": 5,
-        "text": "Levei o meu Renault com um problema estranho no motor. Em meia hora já tinham o diagnóstico e o orçamento. Trabalho impecável.",
+        "text": "Levei o carro com um problema estranho no motor. O diagnóstico eletrónico identificou tudo em minutos. Trabalho excelente.",
         "date": "há 1 mês"
       }
     ]
@@ -184,9 +184,9 @@
   "contact": {
     "label": "Fale Connosco",
     "title": "Visite-nos ou Peça um Orçamento",
-    "address": "Rua da Oficina 42, 2775-000 Carcavelos",
-    "phone": "+351 214 000 000",
-    "email": "info@oficinarodrigues.pt",
+    "address": "R. Plácido de Abreu 2, 2775-617 Carcavelos",
+    "phone": "+351 214 578 709",
+    "email": "info@revicar.pt",
     "hoursTitle": "Horário de Funcionamento",
     "weekdays": "Seg – Sex: 8:30 – 18:30",
     "saturday": "Sábado: 9:00 – 13:00",
@@ -200,10 +200,10 @@
     "formSuccess": "Mensagem enviada! Respondemos dentro de 24 horas."
   },
   "footer": {
-    "description": "Oficina automóvel familiar em Carcavelos. Serviço honesto, preços transparentes e mecânicos certificados desde 2007.",
+    "description": "Oficina de reparação automóvel multi-marcas em Carcavelos. Mecânica, chapa e pintura, eletricista, climatização e pneus.",
     "quickLinks": "Links Rápidos",
     "followUs": "Siga-nos",
-    "copyright": "© 2025 Oficina Rodrigues. Todos os direitos reservados."
+    "copyright": "© 2025 Revicar — Reparações Automóveis. Todos os direitos reservados."
   },
   "callBar": {
     "label": "Precisa de ajuda? Ligue agora",

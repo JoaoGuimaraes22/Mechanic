@@ -29,7 +29,7 @@ export default async function Home({ params }: Props) {
       >
         <Image
           src="/img/hero.png"
-          alt="Oficina Rodrigues — auto repair workshop"
+          alt="Revicar — reparações automóveis"
           fill
           priority
           className="object-cover"
