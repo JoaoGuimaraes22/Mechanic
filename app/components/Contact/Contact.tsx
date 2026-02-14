@@ -197,7 +197,7 @@ export default function Contact({ dict }: Props) {
             <div className="space-y-4">
               {/* Address */}
               <a
-                href="https://www.google.com/maps"
+                href="https://www.google.com/maps/search/Revicar+Repara%C3%A7%C3%B5es+Autom%C3%B3veis+Carcavelos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 group"
@@ -292,24 +292,16 @@ export default function Contact({ dict }: Props) {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="rounded-xl overflow-hidden border border-slate-800 aspect-[16/9] bg-slate-800 flex items-center justify-center hover:border-slate-700 transition-colors duration-300">
-              <div className="text-center text-slate-500">
-                <svg
-                  className="w-10 h-10 mx-auto mb-2 text-slate-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
-                  />
-                </svg>
-                <span className="text-xs">Google Maps embed here</span>
-              </div>
+            {/* Google Maps embed */}
+            <div className="rounded-xl overflow-hidden border border-slate-800 aspect-[16/9] hover:border-slate-700 transition-colors duration-300">
+              <iframe
+                src="https://maps.google.com/maps?q=Revicar+Repara%C3%A7%C3%B5es+Autom%C3%B3veis+R.+Pl%C3%A1cido+de+Abreu+2+Carcavelos&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Revicar — Google Maps"
+              />
             </div>
           </div>
         </div>

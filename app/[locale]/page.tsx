@@ -9,6 +9,7 @@ import Reviews from "../components/Reviews/Reviews";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import CallBar from "../components/CallBar/CallBar";
+import WhatsApp from "../components/WhatsApp/WhatsApp";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -48,6 +49,7 @@ export default async function Home({ params }: Props) {
       <Contact dict={dict.contact} />
       <Footer dict={dict.footer} navDict={dict.navbar} locale={locale} />
       <CallBar dict={dict.callBar} phone={dict.hero.phone} />
+      <WhatsApp phone={dict.whatsapp.phone} message={dict.whatsapp.message} />
     </main>
   );
 }

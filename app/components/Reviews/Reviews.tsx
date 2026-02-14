@@ -135,7 +135,7 @@ export default function Reviews({ dict }: Props) {
           style={{ transitionDelay: visible ? "900ms" : "0ms" }}
         >
           <a
-            href="https://www.google.com/maps"
+            href="https://www.google.com/maps/search/Revicar+Repara%C3%A7%C3%B5es+Autom%C3%B3veis+Carcavelos"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-300 uppercase tracking-wide hover:border-white hover:text-white hover:scale-105 active:scale-95 transition-all duration-200"

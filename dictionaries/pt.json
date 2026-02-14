@@ -139,5 +139,9 @@
   "callBar": {
     "label": "Precisa de ajuda? Ligue agora",
     "cta": "Ligar Agora"
+  },
+  "whatsapp": {
+    "phone": "+351214578709",
+    "message": "Olá! Gostava de pedir um orçamento para o meu carro."
   }
 }

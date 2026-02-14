@@ -146,7 +146,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       bestRating: "5",
     },
     image: `${siteUrl}/img/hero.png`,
-    sameAs: [],
+    sameAs: ["https://www.facebook.com/revicarcarcavelos"],
   };
 
   return (
