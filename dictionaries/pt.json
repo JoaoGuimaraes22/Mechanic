@@ -31,124 +31,52 @@
     "stat4Label": "Preços Transparentes"
   },
   "services": {
-    "label": "O Que Fazemos",
-    "title": "Os Nossos Serviços",
-    "categories": {
-      "maintenance": "Manutenção",
-      "repair": "Reparações",
-      "diagnostics": "Diagnósticos",
-      "bodywork": "Chapa & Pintura"
-    },
-    "items": {
-      "maintenance": [
-        {
-          "name": "Ar Condicionado",
-          "description": "Recarga, verificação de fugas e reparação do sistema de climatização.",
-          "price": "consultar"
-        },
-        {
-          "name": "Bateria",
-          "description": "Teste, substituição e diagnóstico do sistema de carga.",
-          "price": "consultar"
-        },
-        {
-          "name": "Pneus",
-          "description": "Troca, balanceamento e alinhamento de todas as marcas.",
-          "price": "consultar"
-        },
-        {
-          "name": "Revisões em Garantia",
-          "description": "Revisões completas mantendo a garantia do fabricante.",
-          "price": "consultar"
-        },
-        {
-          "name": "Mudança de Óleo e Filtros",
-          "description": "Óleo sintético de qualidade com substituição de filtros.",
-          "price": "consultar"
-        },
-        {
-          "name": "Serviço de Travões",
-          "description": "Inspeção e substituição de pastilhas, discos e fluido.",
-          "price": "consultar"
-        }
-      ],
-      "repair": [
-        {
-          "name": "Reparação de Motor",
-          "description": "Desde pequenas reparações a reconstruções completas.",
-          "price": "consultar"
-        },
-        {
-          "name": "Mecânica Geral Multi-Marcas",
-          "description": "Serviço completo para todas as marcas automóveis.",
-          "price": "consultar"
-        },
-        {
-          "name": "Eletricista Automóvel",
-          "description": "Diagnóstico e reparação de problemas elétricos e eletrónicos.",
-          "price": "consultar"
-        },
-        {
-          "name": "Suspensão e Direção",
-          "description": "Amortecedores, molas, rótulas e reparação de direção.",
-          "price": "consultar"
-        },
-        {
-          "name": "Sistema de Escape",
-          "description": "Catalisador, panela de escape e reparação de tubos.",
-          "price": "consultar"
-        },
-        {
-          "name": "Embraiagem e Caixa",
-          "description": "Substituição de embraiagem e reparação de caixa de velocidades.",
-          "price": "consultar"
-        }
-      ],
-      "diagnostics": [
-        {
-          "name": "Teste Diagnóstico Eletrónico",
-          "description": "Verificação eletrónica completa com equipamento de última geração.",
-          "price": "consultar"
-        },
-        {
-          "name": "Diagnóstico Luz de Motor",
-          "description": "Identificação precisa do problema quando a luz de aviso acende.",
-          "price": "consultar"
-        },
-        {
-          "name": "Inspeção Pré-Compra",
-          "description": "Verificação completa antes de comprar um carro usado.",
-          "price": "consultar"
-        },
-        {
-          "name": "Teste de Emissões",
-          "description": "Verificação do sistema de emissões e preparação para IPO.",
-          "price": "consultar"
-        }
-      ],
-      "bodywork": [
-        {
-          "name": "Chapa e Pintura",
-          "description": "Serviço completo de bate-chapas e pintura automóvel.",
-          "price": "consultar"
-        },
-        {
-          "name": "Reparação de Mossas",
-          "description": "Remoção de mossas e bate-chapas profissional.",
-          "price": "consultar"
-        },
-        {
-          "name": "Reparação de Riscos",
-          "description": "Retoque de pintura e remoção de riscos.",
-          "price": "consultar"
-        },
-        {
-          "name": "Reparação de Para-choques",
-          "description": "Reparação de fissuras, repintura e substituição.",
-          "price": "consultar"
-        }
-      ]
-    }
+    "label": "Os Nossos Serviços",
+    "titleBefore": "Soluções",
+    "titleHighlight": "automóvel",
+    "titleAfter": "completas para o seu veículo",
+    "items": [
+      {
+        "name": "Ar Condicionado",
+        "description": "Recarga, verificação de fugas e reparação completa do sistema de climatização do seu veículo.",
+        "icon": "ac"
+      },
+      {
+        "name": "Bateria",
+        "description": "Teste, diagnóstico do sistema de carga e substituição de baterias para todas as marcas.",
+        "icon": "battery"
+      },
+      {
+        "name": "Pneus",
+        "description": "Troca, balanceamento e alinhamento de direção para garantir segurança e conforto na condução.",
+        "icon": "tyres"
+      },
+      {
+        "name": "Reparação de Motor",
+        "description": "Desde pequenas reparações a reconstruções completas, com diagnóstico preciso e peças de qualidade.",
+        "icon": "engine"
+      },
+      {
+        "name": "Mecânica Geral",
+        "description": "Serviço completo multi-marcas: travões, suspensão, embraiagem, escape e muito mais.",
+        "icon": "mechanic"
+      },
+      {
+        "name": "Revisões em Garantia",
+        "description": "Executamos revisões completas de acordo com as normas do fabricante, mantendo a garantia do veículo.",
+        "icon": "revision"
+      },
+      {
+        "name": "Teste Diagnóstico",
+        "description": "Utilizamos tecnologia avançada para identificar falhas no sistema eletrónico e mecânico do automóvel.",
+        "icon": "diagnostics"
+      },
+      {
+        "name": "Chapa e Pintura",
+        "description": "Serviço profissional de bate-chapas e pintura automóvel para devolver o aspeto original ao seu carro.",
+        "icon": "bodywork"
+      }
+    ]
   },
   "reviews": {
     "label": "O Que Dizem os Nossos Clientes",

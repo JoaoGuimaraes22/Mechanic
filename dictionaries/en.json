@@ -31,124 +31,52 @@
     "stat4Label": "Transparent Pricing"
   },
   "services": {
-    "label": "What We Do",
-    "title": "Our Services",
-    "categories": {
-      "maintenance": "Maintenance",
-      "repair": "Repairs",
-      "diagnostics": "Diagnostics",
-      "bodywork": "Bodywork & Paint"
-    },
-    "items": {
-      "maintenance": [
-        {
-          "name": "Air Conditioning",
-          "description": "Recharge, leak detection, and full A/C system repair.",
-          "price": "quote"
-        },
-        {
-          "name": "Battery",
-          "description": "Testing, replacement, and charging system diagnostics.",
-          "price": "quote"
-        },
-        {
-          "name": "Tyres",
-          "description": "Replacement, balancing, and alignment for all brands.",
-          "price": "quote"
-        },
-        {
-          "name": "Warranty Services",
-          "description": "Full services that maintain your manufacturer warranty.",
-          "price": "quote"
-        },
-        {
-          "name": "Oil & Filter Change",
-          "description": "Quality synthetic oil with filter replacement.",
-          "price": "quote"
-        },
-        {
-          "name": "Brake Service",
-          "description": "Inspection and replacement of pads, discs, and fluid.",
-          "price": "quote"
-        }
-      ],
-      "repair": [
-        {
-          "name": "Engine Repair",
-          "description": "From minor repairs to complete engine rebuilds.",
-          "price": "quote"
-        },
-        {
-          "name": "Multi-Brand General Mechanics",
-          "description": "Complete mechanical service for all car brands.",
-          "price": "quote"
-        },
-        {
-          "name": "Auto Electrical",
-          "description": "Diagnosis and repair of electrical and electronic issues.",
-          "price": "quote"
-        },
-        {
-          "name": "Suspension & Steering",
-          "description": "Shock absorbers, springs, ball joints, and steering repair.",
-          "price": "quote"
-        },
-        {
-          "name": "Exhaust System",
-          "description": "Catalytic converter, muffler, and pipe repair.",
-          "price": "quote"
-        },
-        {
-          "name": "Clutch & Gearbox",
-          "description": "Clutch replacement and gearbox repair.",
-          "price": "quote"
-        }
-      ],
-      "diagnostics": [
-        {
-          "name": "Electronic Diagnostic Test",
-          "description": "Full electronic check with state-of-the-art equipment.",
-          "price": "quote"
-        },
-        {
-          "name": "Engine Light Diagnosis",
-          "description": "Precise identification of what's triggering the warning light.",
-          "price": "quote"
-        },
-        {
-          "name": "Pre-Purchase Inspection",
-          "description": "Full vehicle check before buying a used car.",
-          "price": "quote"
-        },
-        {
-          "name": "Emissions Test",
-          "description": "Emissions system check and MOT preparation.",
-          "price": "quote"
-        }
-      ],
-      "bodywork": [
-        {
-          "name": "Bodywork & Paint",
-          "description": "Full panel beating and professional auto painting.",
-          "price": "quote"
-        },
-        {
-          "name": "Dent Repair",
-          "description": "Professional dent removal and panel repair.",
-          "price": "quote"
-        },
-        {
-          "name": "Scratch Repair",
-          "description": "Paint touch-up and scratch removal.",
-          "price": "quote"
-        },
-        {
-          "name": "Bumper Repair",
-          "description": "Crack repair, respray, and replacement.",
-          "price": "quote"
-        }
-      ]
-    }
+    "label": "Our Services",
+    "titleBefore": "Complete",
+    "titleHighlight": "automotive",
+    "titleAfter": "solutions for your vehicle",
+    "items": [
+      {
+        "name": "Air Conditioning",
+        "description": "Recharge, leak detection, and full repair of your vehicle's air conditioning system.",
+        "icon": "ac"
+      },
+      {
+        "name": "Battery",
+        "description": "Testing, charging system diagnostics, and battery replacement for all brands.",
+        "icon": "battery"
+      },
+      {
+        "name": "Tyres",
+        "description": "Replacement, balancing, and wheel alignment for safe and comfortable driving.",
+        "icon": "tyres"
+      },
+      {
+        "name": "Engine Repair",
+        "description": "From minor repairs to full rebuilds, with precise diagnostics and quality parts.",
+        "icon": "engine"
+      },
+      {
+        "name": "General Mechanics",
+        "description": "Complete multi-brand service: brakes, suspension, clutch, exhaust, and more.",
+        "icon": "mechanic"
+      },
+      {
+        "name": "Warranty Services",
+        "description": "Full services according to manufacturer standards, keeping your vehicle warranty intact.",
+        "icon": "revision"
+      },
+      {
+        "name": "Diagnostic Testing",
+        "description": "We use advanced technology to identify faults in the electronic and mechanical systems.",
+        "icon": "diagnostics"
+      },
+      {
+        "name": "Bodywork & Paint",
+        "description": "Professional panel beating and auto painting to restore your car's original look.",
+        "icon": "bodywork"
+      }
+    ]
   },
   "reviews": {
     "label": "What Our Customers Say",
