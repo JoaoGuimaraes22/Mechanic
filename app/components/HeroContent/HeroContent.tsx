@@ -17,50 +17,55 @@ type Props = {
 };
 
 export default function HeroContent({ dict, locale }: Props) {
-  const [visible, setVisible] = useState(false);
+  const [step, setStep] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 100);
-    return () => clearTimeout(timer);
+    const delays = [100, 400, 700, 1000, 1400];
+    const timers = delays.map((d, i) => setTimeout(() => setStep(i + 1), d));
+    return () => timers.forEach(clearTimeout);
   }, []);
 
+  const show = (n: number) =>
+    step >= n ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5";
+
   return (
-    <div
-      className={`relative z-10 flex flex-col items-center transition-all duration-1000 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      }`}
-    >
+    <div className="relative z-10 flex flex-col items-center">
       {/* Tagline */}
-      <p className="text-red-500 uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
+      <p
+        className={`text-red-500 uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold mb-4 sm:mb-6 transition-all duration-700 ease-out ${show(1)}`}
+      >
         {dict.tagline}
       </p>
 
       {/* Title */}
       <h1
-        className="text-5xl sm:text-7xl md:text-8xl font-bold text-white leading-tight"
+        className={`text-5xl sm:text-7xl md:text-8xl font-bold text-white leading-tight transition-all duration-700 ease-out ${show(2)}`}
         style={{ fontFamily: "'Oswald', sans-serif" }}
       >
         {dict.title}
       </h1>
 
       {/* Subtitle */}
-      <p className="mt-5 sm:mt-6 max-w-xl text-slate-300 text-base sm:text-lg leading-relaxed px-2">
+      <p
+        className={`mt-5 sm:mt-6 max-w-xl text-slate-300 text-base sm:text-lg leading-relaxed px-2 transition-all duration-700 ease-out ${show(3)}`}
+      >
         {dict.subtitle}
       </p>
 
       {/* CTAs */}
-      <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4">
+      <div
+        className={`mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 transition-all duration-700 ease-out ${show(4)}`}
+      >
         <a
           href={`/${locale}#contact`}
-          className="rounded-full bg-red-600 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 active:bg-red-700 transition-colors min-w-[220px] text-center"
+          className="rounded-full bg-red-600 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 hover:scale-105 active:scale-95 transition-all duration-200 min-w-[220px] text-center"
         >
           {dict.ctaPrimary}
         </a>
         <a
           href={`tel:${dict.phone.replace(/\s/g, "")}`}
-          className="rounded-full border-2 border-slate-400 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:border-white hover:bg-white/10 active:bg-white/20 transition-colors min-w-[220px] text-center flex items-center justify-center gap-2"
+          className="rounded-full border-2 border-slate-400 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:border-white hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 min-w-[220px] text-center flex items-center justify-center gap-2"
         >
-          {/* Phone icon */}
           <svg
             className="w-4 h-4"
             fill="none"
@@ -79,9 +84,10 @@ export default function HeroContent({ dict, locale }: Props) {
       </div>
 
       {/* Trust badges */}
-      <div className="mt-10 sm:mt-14 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-400 text-xs sm:text-sm">
+      <div
+        className={`mt-10 sm:mt-14 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-400 text-xs sm:text-sm transition-all duration-700 ease-out ${show(5)}`}
+      >
         <div className="flex items-center gap-2">
-          {/* Shield icon */}
           <svg
             className="w-5 h-5 text-red-500"
             fill="none"
@@ -98,7 +104,6 @@ export default function HeroContent({ dict, locale }: Props) {
           <span>Factory Certified</span>
         </div>
         <div className="flex items-center gap-2">
-          {/* Clock icon */}
           <svg
             className="w-5 h-5 text-red-500"
             fill="none"
@@ -115,7 +120,6 @@ export default function HeroContent({ dict, locale }: Props) {
           <span>17+ Years Experience</span>
         </div>
         <div className="flex items-center gap-2">
-          {/* Star icon */}
           <svg
             className="w-5 h-5 text-red-500"
             fill="currentColor"

@@ -69,33 +69,45 @@ export default function Contact({ dict }: Props) {
     }
   };
 
+  const inputClasses =
+    "w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 transition-all duration-300";
+
   return (
     <section
       id="contact"
       ref={sectionRef}
       className="py-16 sm:py-24 px-5 sm:px-6 bg-slate-950"
     >
-      <div
-        className={`mx-auto max-w-6xl transition-all duration-1000 ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <p className="text-red-500 uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold mb-3 text-center">
+        <p
+          className={`text-red-500 uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold mb-3 text-center transition-all duration-700 ease-out ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
+        >
           {dict.label}
         </p>
         <h2
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-10 sm:mb-14"
+          className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-10 sm:mb-14 transition-all duration-700 ease-out delay-150 ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
           style={{ fontFamily: "'Oswald', sans-serif" }}
         >
           {dict.title}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {/* Form */}
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8">
+          {/* Form — slides from left */}
+          <div
+            className={`rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 transition-all duration-1000 ease-out ${
+              visible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-10"
+            }`}
+            style={{ transitionDelay: visible ? "300ms" : "0ms" }}
+          >
             {submitted ? (
-              <div className="flex flex-col items-center justify-center h-full text-center py-12">
+              <div className="flex flex-col items-center justify-center h-full text-center py-12 animate-[fadeIn_0.5s_ease-out]">
                 <div className="w-14 h-14 bg-red-600/20 rounded-full flex items-center justify-center mb-5">
                   <svg
                     className="w-7 h-7 text-red-500"
@@ -129,14 +141,14 @@ export default function Contact({ dict }: Props) {
                     name="name"
                     required
                     placeholder={dict.formName}
-                    className="w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors"
+                    className={inputClasses}
                   />
                   <input
                     type="email"
                     name="email"
                     required
                     placeholder={dict.formEmail}
-                    className="w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors"
+                    className={inputClasses}
                   />
                 </div>
 
@@ -145,13 +157,13 @@ export default function Contact({ dict }: Props) {
                     type="tel"
                     name="phone"
                     placeholder={dict.formPhone}
-                    className="w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors"
+                    className={inputClasses}
                   />
                   <input
                     type="text"
                     name="car"
                     placeholder={dict.formCar}
-                    className="w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors"
+                    className={inputClasses}
                   />
                 </div>
 
@@ -160,13 +172,13 @@ export default function Contact({ dict }: Props) {
                   required
                   rows={4}
                   placeholder={dict.formMessage}
-                  className="w-full rounded-lg bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors resize-none"
+                  className={`${inputClasses} resize-none`}
                 />
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full rounded-full bg-red-600 px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 active:bg-red-700 disabled:opacity-50 transition-colors"
+                  className="w-full rounded-full bg-red-600 px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-600/25 active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 transition-all duration-200"
                 >
                   {loading ? "..." : dict.formSubmit}
                 </button>
@@ -174,8 +186,13 @@ export default function Contact({ dict }: Props) {
             )}
           </div>
 
-          {/* Info sidebar */}
-          <div className="space-y-6">
+          {/* Info sidebar — slides from right, staggered children */}
+          <div
+            className={`space-y-6 transition-all duration-1000 ease-out ${
+              visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+            }`}
+            style={{ transitionDelay: visible ? "500ms" : "0ms" }}
+          >
             {/* Contact details */}
             <div className="space-y-4">
               {/* Address */}
@@ -185,7 +202,7 @@ export default function Contact({ dict }: Props) {
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 group-hover:bg-red-600/10 transition-all duration-300">
                   <svg
                     className="w-5 h-5 text-red-500"
                     fill="none"
@@ -206,7 +223,7 @@ export default function Contact({ dict }: Props) {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors">
+                  <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors duration-300">
                     {dict.address}
                   </p>
                 </div>
@@ -217,7 +234,7 @@ export default function Contact({ dict }: Props) {
                 href={`tel:${dict.phone.replace(/\s/g, "")}`}
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 group-hover:bg-red-600/10 transition-all duration-300">
                   <svg
                     className="w-5 h-5 text-red-500"
                     fill="none"
@@ -232,7 +249,7 @@ export default function Contact({ dict }: Props) {
                     />
                   </svg>
                 </div>
-                <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors">
+                <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors duration-300">
                   {dict.phone}
                 </p>
               </a>
@@ -242,7 +259,7 @@ export default function Contact({ dict }: Props) {
                 href={`mailto:${dict.email}`}
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-red-500 group-hover:bg-red-600/10 transition-all duration-300">
                   <svg
                     className="w-5 h-5 text-red-500"
                     fill="none"
@@ -257,14 +274,14 @@ export default function Contact({ dict }: Props) {
                     />
                   </svg>
                 </div>
-                <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors">
+                <p className="text-white text-sm font-medium group-hover:text-red-400 transition-colors duration-300">
                   {dict.email}
                 </p>
               </a>
             </div>
 
             {/* Hours */}
-            <div className="rounded-xl bg-slate-900 border border-slate-800 p-5">
+            <div className="rounded-xl bg-slate-900 border border-slate-800 p-5 hover:border-slate-700 transition-colors duration-300">
               <h3 className="text-white font-semibold text-sm uppercase tracking-wide mb-3">
                 {dict.hoursTitle}
               </h3>
@@ -276,7 +293,7 @@ export default function Contact({ dict }: Props) {
             </div>
 
             {/* Map placeholder */}
-            <div className="rounded-xl overflow-hidden border border-slate-800 aspect-[16/9] bg-slate-800 flex items-center justify-center">
+            <div className="rounded-xl overflow-hidden border border-slate-800 aspect-[16/9] bg-slate-800 flex items-center justify-center hover:border-slate-700 transition-colors duration-300">
               <div className="text-center text-slate-500">
                 <svg
                   className="w-10 h-10 mx-auto mb-2 text-slate-600"

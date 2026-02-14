@@ -86,7 +86,7 @@ export default function Navbar({ dict, locale }: Props) {
           <li>
             <a
               href={`/${locale}#contact`}
-              className="rounded-full bg-red-600 px-5 py-2 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 transition-colors"
+              className="rounded-full bg-red-600 px-5 py-2 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 hover:scale-105 active:scale-95 transition-all duration-200"
             >
               {dict.cta}
             </a>
