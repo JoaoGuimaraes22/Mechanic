@@ -18,6 +18,9 @@
     "badge2": "Transparent Pricing",
     "badge3": "4.9 ★ Google Rating"
   },
+  "brands": {
+    "label": "We work with all major brands"
+  },
   "about": {
     "label": "Why Choose Us",
     "title": "Your Car In Good Hands",
@@ -112,6 +115,36 @@
       }
     ]
   },
+  "faq": {
+    "label": "Frequently Asked Questions",
+    "title": "Got Questions? We Have Answers",
+    "items": [
+      {
+        "question": "Do I need to make an appointment?",
+        "answer": "For most services, an appointment is recommended so we can reserve time for your vehicle. However, we do accept walk-ins for quick services like battery testing or tyre pressure checks. Call us or send a WhatsApp message to schedule."
+      },
+      {
+        "question": "Do you work with all car brands?",
+        "answer": "Yes, we are a multi-brand workshop. We service all major European and Asian manufacturers including BMW, Mercedes, Volkswagen, Audi, Renault, Peugeot, Toyota, Honda, and many more."
+      },
+      {
+        "question": "Will my manufacturer warranty remain valid?",
+        "answer": "Absolutely. We perform all warranty services according to the manufacturer's specifications, using approved parts and procedures. Your warranty stays fully intact."
+      },
+      {
+        "question": "How long does a typical service take?",
+        "answer": "A standard service or revision usually takes 2-4 hours. More complex repairs like engine work or bodywork & paint may take 1-3 days. We always give you a time estimate upfront before starting any work."
+      },
+      {
+        "question": "Do you provide a quote before starting?",
+        "answer": "Always. Transparency is our core value. We diagnose the issue, explain what needs to be done, and present a clear written quote. We only proceed with your explicit approval — no surprises."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept cash, debit cards, credit cards (Visa, Mastercard), and MB Way. For larger repairs, we can also discuss payment arrangements."
+      }
+    ]
+  },
   "contact": {
     "label": "Get In Touch",
     "title": "Visit Us or Request a Quote",
@@ -139,9 +172,5 @@
   "callBar": {
     "label": "Need help? Call us now",
     "cta": "Call Now"
-  },
-  "whatsapp": {
-    "phone": "+351214578709",
-    "message": "Hi! I'd like to request a quote for my car."
   }
 }

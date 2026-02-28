@@ -18,6 +18,9 @@
     "badge2": "Preços Transparentes",
     "badge3": "4.9 ★ Avaliação Google"
   },
+  "brands": {
+    "label": "Trabalhamos com todas as marcas"
+  },
   "about": {
     "label": "Porquê Escolher-nos",
     "title": "O Seu Carro Em Boas Mãos",
@@ -112,6 +115,36 @@
       }
     ]
   },
+  "faq": {
+    "label": "Perguntas Frequentes",
+    "title": "Tem Dúvidas? Nós Respondemos",
+    "items": [
+      {
+        "question": "Preciso de marcar hora?",
+        "answer": "Para a maioria dos serviços, recomendamos marcação prévia para garantir disponibilidade. No entanto, aceitamos visitas sem marcação para serviços rápidos como teste de bateria ou verificação de pressão dos pneus. Ligue-nos ou envie uma mensagem por WhatsApp para agendar."
+      },
+      {
+        "question": "Trabalham com todas as marcas?",
+        "answer": "Sim, somos uma oficina multi-marcas. Fazemos manutenção e reparação de todas as principais marcas europeias e asiáticas, incluindo BMW, Mercedes, Volkswagen, Audi, Renault, Peugeot, Toyota, Honda, entre muitas outras."
+      },
+      {
+        "question": "A garantia do fabricante mantém-se?",
+        "answer": "Sim, sem dúvida. Realizamos todas as revisões de acordo com as especificações do fabricante, utilizando peças e procedimentos aprovados. A garantia do seu veículo mantém-se totalmente válida."
+      },
+      {
+        "question": "Quanto tempo demora um serviço?",
+        "answer": "Uma revisão ou serviço standard demora normalmente 2 a 4 horas. Reparações mais complexas como trabalho de motor ou chapa e pintura podem demorar 1 a 3 dias. Damos sempre uma estimativa de tempo antes de iniciar qualquer trabalho."
+      },
+      {
+        "question": "Fazem orçamento antes de começar?",
+        "answer": "Sempre. A transparência é o nosso valor principal. Diagnosticamos o problema, explicamos o que precisa de ser feito e apresentamos um orçamento claro e por escrito. Só avançamos com a sua aprovação explícita — sem surpresas."
+      },
+      {
+        "question": "Que métodos de pagamento aceitam?",
+        "answer": "Aceitamos dinheiro, cartão de débito, cartão de crédito (Visa, Mastercard) e MB Way. Para reparações de maior valor, podemos também discutir condições de pagamento."
+      }
+    ]
+  },
   "contact": {
     "label": "Fale Connosco",
     "title": "Visite-nos ou Peça um Orçamento",
@@ -139,9 +172,5 @@
   "callBar": {
     "label": "Precisa de ajuda? Ligue agora",
     "cta": "Ligar Agora"
-  },
-  "whatsapp": {
-    "phone": "+351214578709",
-    "message": "Olá! Gostava de pedir um orçamento para o meu carro."
   }
 }

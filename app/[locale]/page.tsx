@@ -3,13 +3,14 @@ import { getDictionary } from "../../get-dictionary";
 import type { Locale } from "../../i18n-config";
 import Navbar from "../components/Navbar/Navbar";
 import HeroContent from "../components/HeroContent/HeroContent";
+import Brands from "../components/Brands/Brands";
 import About from "../components/About/About";
 import Services from "../components/Services/Services";
 import Reviews from "../components/Reviews/Reviews";
+import FAQ from "../components/FAQ/FAQ";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import CallBar from "../components/CallBar/CallBar";
-import WhatsApp from "../components/WhatsApp/WhatsApp";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -38,6 +39,11 @@ export default async function Home({ params }: Props) {
         />
         <div className="absolute inset-0 bg-black/65" />
         <HeroContent dict={dict.hero} locale={locale} />
+
+        {/* Brands bar pinned to bottom of hero */}
+        <div className="absolute bottom-0 left-0 right-0 z-10">
+          <Brands dict={dict.brands} />
+        </div>
       </section>
 
       <About dict={dict.about} />
@@ -46,10 +52,11 @@ export default async function Home({ params }: Props) {
 
       <Reviews dict={dict.reviews} />
 
+      <FAQ dict={dict.faq} />
+
       <Contact dict={dict.contact} />
       <Footer dict={dict.footer} navDict={dict.navbar} locale={locale} />
       <CallBar dict={dict.callBar} phone={dict.hero.phone} />
-      <WhatsApp phone={dict.whatsapp.phone} message={dict.whatsapp.message} />
     </main>
   );
 }

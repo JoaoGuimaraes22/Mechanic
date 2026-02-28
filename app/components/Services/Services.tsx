@@ -295,20 +295,20 @@ export default function Services({ dict }: Props) {
           {dict.titleAfter}
         </h2>
 
-        {/* Card slider — draggable */}
+        {/* Card slider — draggable, lg:px-0 so spacers handle alignment */}
         <div
           ref={sliderRef}
-          className="flex gap-5 sm:gap-6 overflow-x-auto snap-x snap-mandatory px-5 sm:px-6 pb-2 scrollbar-hide cursor-grab select-none"
+          className="flex gap-5 sm:gap-6 overflow-x-auto snap-x snap-mandatory px-5 sm:px-6 lg:px-0 pb-2 scrollbar-hide cursor-grab select-none"
           style={{ WebkitOverflowScrolling: "touch" }}
           onMouseDown={onMouseDown}
           onMouseMove={onMouseMove}
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}
         >
-          {/* Leading spacer */}
+          {/* Leading spacer — aligns first card with max-w-6xl container */}
           <div
             className="hidden lg:block shrink-0"
-            style={{ width: "calc((100vw - 1152px) / 2 - 12px)" }}
+            style={{ width: "calc((100vw - 1152px) / 2)" }}
           />
 
           {dict.items.map((item, i) => (
@@ -366,7 +366,7 @@ export default function Services({ dict }: Props) {
           {/* Trailing spacer */}
           <div
             className="hidden lg:block shrink-0"
-            style={{ width: "calc((100vw - 1152px) / 2 - 12px)" }}
+            style={{ width: "calc((100vw - 1152px) / 2)" }}
           />
           <div className="shrink-0 w-1 lg:hidden" />
         </div>
