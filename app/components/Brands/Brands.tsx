@@ -33,7 +33,7 @@ const brands = [
 /* Minimal brand icons — one per brand for visual variety */
 const brandIcons: Record<string, React.ReactNode> = {
   BMW: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
       <circle
         cx="12"
         cy="12"
@@ -52,7 +52,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Mercedes: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -64,7 +64,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Volkswagen: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -76,7 +76,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Audi: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 32 16"
       fill="none"
       stroke="currentColor"
@@ -90,7 +90,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Renault: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -101,7 +101,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Peugeot: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -113,7 +113,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Citroën: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -125,7 +125,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Toyota: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -137,7 +137,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Ford: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -148,7 +148,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Fiat: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -160,7 +160,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Opel: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -173,7 +173,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Nissan: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -185,7 +185,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Honda: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -196,7 +196,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Volvo: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -208,7 +208,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Hyundai: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -219,7 +219,7 @@ const brandIcons: Record<string, React.ReactNode> = {
   ),
   Kia: (
     <svg
-      className="w-8 h-8"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -252,7 +252,7 @@ export default function Brands({ dict }: Props) {
   return (
     <section
       ref={sectionRef}
-      className="py-6 sm:py-8 bg-black/80 backdrop-blur-sm overflow-hidden"
+      className="py-2 sm:py-4 bg-black/80 backdrop-blur-sm overflow-hidden"
     >
       <div
         className={`transition-all duration-1000 ${
@@ -260,26 +260,26 @@ export default function Brands({ dict }: Props) {
         }`}
       >
         {/* Label */}
-        <p className="text-center text-slate-400 uppercase tracking-[0.2em] text-[10px] sm:text-xs font-semibold mb-5 sm:mb-6">
+        <p className="text-center text-slate-400 uppercase tracking-[0.2em] text-[10px] font-semibold mb-2 sm:mb-3">
           {dict.label}
         </p>
 
         {/* Infinite scroll strip */}
         <div className="relative">
           {/* Edge fades */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-black/60 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-linear-to-r from-black/60 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-linear-to-l from-black/60 to-transparent z-10 pointer-events-none" />
 
           <div
             ref={scrollRef}
-            className="flex items-center gap-10 sm:gap-14 animate-scroll"
+            className="flex items-center gap-8 sm:gap-10 animate-scroll"
           >
             {doubled.map((brand, i) => (
               <div
                 key={`${brand}-${i}`}
                 className="flex flex-col items-center gap-2 shrink-0 group cursor-default"
               >
-                <div className="text-slate-600 group-hover:text-red-500 transition-colors duration-300">
+                <div className="hidden sm:block text-slate-600 group-hover:text-red-500 transition-colors duration-300">
                   {brandIcons[brand]}
                 </div>
                 <span

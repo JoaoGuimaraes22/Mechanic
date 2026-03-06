@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
 type ServiceItem = {
@@ -146,6 +147,21 @@ const icons: Record<string, React.ReactNode> = {
       />
     </svg>
   ),
+  electrical: (
+    <svg
+      className="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13 10V3L4 14h7v7l9-11h-7z"
+      />
+    </svg>
+  ),
 };
 
 const gradients = [
@@ -264,20 +280,28 @@ export default function Services({ dict }: Props) {
     <section
       id="services"
       ref={sectionRef}
-      className="py-16 sm:py-24 bg-slate-100"
+      className="relative py-16 sm:py-24 overflow-hidden"
     >
+      <Image
+        src="/img/services.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-white/45" />
       <div
-        className={`transition-all duration-1000 ${
+        className={`relative z-10 transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         {/* Label with red lines */}
         <div className="flex items-center justify-center gap-3 mb-5 px-5">
-          <span className="h-[2px] w-8 bg-red-500 rounded-full" />
+          <span className="h-0.5 w-8 bg-red-500 rounded-full" />
           <p className="text-red-600 uppercase tracking-[0.2em] text-xs sm:text-sm font-bold">
             {dict.label}
           </p>
-          <span className="h-[2px] w-8 bg-red-500 rounded-full" />
+          <span className="h-0.5 w-8 bg-red-500 rounded-full" />
         </div>
 
         {/* Title with highlighted word */}
@@ -290,39 +314,33 @@ export default function Services({ dict }: Props) {
             <span className="relative z-10 text-red-600">
               {dict.titleHighlight}
             </span>
-            <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-red-500 rounded-full" />
+            <span className="absolute bottom-0 left-0 right-0 h-0.75bg-red-500 rounded-full" />
           </span>{" "}
           {dict.titleAfter}
         </h2>
 
-        {/* Card slider — draggable, lg:px-0 so spacers handle alignment */}
+        {/* Card slider — mobile only */}
         <div
           ref={sliderRef}
-          className="flex gap-5 sm:gap-6 overflow-x-auto snap-x snap-mandatory px-5 sm:px-6 lg:px-0 pb-2 scrollbar-hide cursor-grab select-none"
+          className="lg:hidden flex gap-5 sm:gap-6 overflow-x-auto snap-x snap-mandatory px-5 sm:px-6 pb-2 scrollbar-hide cursor-grab select-none"
           style={{ WebkitOverflowScrolling: "touch" }}
           onMouseDown={onMouseDown}
           onMouseMove={onMouseMove}
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}
         >
-          {/* Leading spacer — aligns first card with max-w-6xl container */}
-          <div
-            className="hidden lg:block shrink-0"
-            style={{ width: "calc((100vw - 1152px) / 2)" }}
-          />
-
           {dict.items.map((item, i) => (
             <div
               key={i}
               ref={(el) => {
                 cardRefs.current[i] = el;
               }}
-              className="snap-center shrink-0 w-[280px] sm:w-[300px] md:w-[320px]"
+              className="snap-center shrink-0 w-70 sm:w-75"
             >
-              <div className="rounded-2xl bg-white shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div className="rounded-2xl bg-white/75 backdrop-blur-sm shadow-md overflow-hidden group hover:shadow-xl hover:bg-white/90 transition-all duration-300">
                 {/* Image area */}
                 <div
-                  className={`relative h-44 sm:h-48 bg-gradient-to-br ${gradients[i % gradients.length]} rounded-t-2xl overflow-hidden`}
+                  className={`relative h-44 sm:h-48 bg-linear-to-br ${gradients[i % gradients.length]} rounded-t-2xl overflow-hidden`}
                 >
                   {/* Number badge */}
                   <div className="absolute top-3 left-3 bg-red-600 rounded-lg w-10 h-10 flex items-center justify-center shadow-md">
@@ -363,16 +381,53 @@ export default function Services({ dict }: Props) {
             </div>
           ))}
 
-          {/* Trailing spacer */}
-          <div
-            className="hidden lg:block shrink-0"
-            style={{ width: "calc((100vw - 1152px) / 2)" }}
-          />
-          <div className="shrink-0 w-1 lg:hidden" />
+          <div className="shrink-0 w-1" />
         </div>
 
-        {/* Pagination dots */}
-        <div className="flex items-center justify-center gap-2 mt-8">
+        {/* Desktop 3×3 grid — hidden on mobile */}
+        <div className="hidden lg:grid grid-cols-3 gap-6 px-5 sm:px-6 max-w-6xl mx-auto">
+          {dict.items.map((item, i) => (
+            <div
+              key={i}
+              className="rounded-2xl bg-white/75 backdrop-blur-sm shadow-md overflow-hidden group hover:shadow-xl hover:bg-white/90 transition-all duration-300"
+            >
+              <div
+                className={`relative h-40 bg-linear-to-br ${gradients[i % gradients.length]} rounded-t-2xl overflow-hidden`}
+              >
+                <div className="absolute top-3 left-3 bg-red-600 rounded-lg w-10 h-10 flex items-center justify-center shadow-md">
+                  <span
+                    className="text-white font-bold text-sm"
+                    style={{ fontFamily: "'Oswald', sans-serif" }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-15 scale-[3] text-white pointer-events-none">
+                  {icons[item.icon]}
+                </div>
+              </div>
+              <div className="flex justify-center -mt-7 relative z-10">
+                <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center shadow-lg text-white ring-4 ring-white/75">
+                  {icons[item.icon]}
+                </div>
+              </div>
+              <div className="px-5 pt-3 pb-6 text-center">
+                <h3
+                  className="text-slate-900 font-bold text-lg mb-2"
+                  style={{ fontFamily: "'Oswald', sans-serif" }}
+                >
+                  {item.name}
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Pagination dots — mobile only */}
+        <div className="lg:hidden flex items-center justify-center gap-2 mt-8">
           {dict.items.map((_, i) => (
             <button
               key={i}

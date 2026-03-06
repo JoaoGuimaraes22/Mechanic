@@ -42,7 +42,7 @@ export default function HeroContent({ dict, locale }: Props) {
 
       {/* Title */}
       <h1
-        className={`text-5xl sm:text-7xl md:text-8xl font-bold text-white leading-tight transition-all duration-700 ease-out ${show(2)}`}
+        className={`text-4xl sm:text-7xl md:text-8xl font-bold text-white leading-tight transition-all duration-700 ease-out ${show(2)}`}
         style={{ fontFamily: "'Oswald', sans-serif" }}
       >
         {dict.title}
@@ -50,14 +50,14 @@ export default function HeroContent({ dict, locale }: Props) {
 
       {/* Subtitle */}
       <p
-        className={`mt-5 sm:mt-6 max-w-xl text-slate-300 text-base sm:text-lg leading-relaxed px-2 transition-all duration-700 ease-out ${show(3)}`}
+        className={`mt-3 sm:mt-6 max-w-xl text-slate-300 text-sm sm:text-lg leading-relaxed px-2 transition-all duration-700 ease-out ${show(3)}`}
       >
         {dict.subtitle}
       </p>
 
       {/* CTAs */}
       <div
-        className={`mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 transition-all duration-700 ease-out ${show(4)}`}
+        className={`mt-5 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 transition-all duration-700 ease-out ${show(4)}`}
       >
         <a
           href={`/${locale}#contact`}
@@ -88,7 +88,7 @@ export default function HeroContent({ dict, locale }: Props) {
 
       {/* Trust badges */}
       <div
-        className={`mt-10 sm:mt-14 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-400 text-xs sm:text-sm transition-all duration-700 ease-out ${show(5)}`}
+        className={`mt-6 sm:mt-14 flex flex-wrap items-center justify-center gap-4 sm:gap-10 text-slate-400 text-xs sm:text-sm transition-all duration-700 ease-out ${show(5)}`}
       >
         <div className="flex items-center gap-2">
           <svg

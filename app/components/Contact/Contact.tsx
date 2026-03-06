@@ -296,7 +296,7 @@ export default function Contact({ dict }: Props) {
             <div className="rounded-xl overflow-hidden border border-slate-800 aspect-video hover:border-slate-700 transition-colors duration-300">
               <iframe
                 src="https://maps.google.com/maps?q=Revicar+Repara%C3%A7%C3%B5es+Autom%C3%B3veis+R.+Pl%C3%A1cido+de+Abreu+2+Carcavelos&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

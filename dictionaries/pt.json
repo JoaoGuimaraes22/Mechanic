@@ -81,6 +81,11 @@
         "name": "Chapa e Pintura",
         "description": "Serviço profissional de bate-chapas e pintura automóvel para devolver o aspeto original ao seu carro.",
         "icon": "bodywork"
+      },
+      {
+        "name": "Eletricista Auto",
+        "description": "Diagnóstico e reparação de sistemas elétricos, faróis, alternadores, arranques e instalações auxiliares.",
+        "icon": "electrical"
       }
     ]
   },
@@ -170,7 +175,7 @@
     "copyright": "© 2025 Revicar — Reparações Automóveis. Todos os direitos reservados."
   },
   "callBar": {
-    "label": "Precisa de ajuda? Ligue agora",
+    "label": "Precisa de ajuda?",
     "cta": "Ligar Agora"
   }
 }

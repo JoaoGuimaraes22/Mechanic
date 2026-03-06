@@ -41,10 +41,10 @@ function AccordionItem({
 
   return (
     <div
-      className={`border border-slate-800 rounded-xl overflow-hidden transition-all duration-700 ease-out ${
+      className={`border rounded-xl overflow-hidden transition-all duration-700 ease-out ${
         isOpen
-          ? "bg-slate-800/50 border-slate-700"
-          : "bg-slate-900/50 hover:border-slate-700"
+          ? "bg-white border-slate-300 shadow-sm"
+          : "bg-white/80 border-slate-200 hover:border-slate-300"
       } ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
@@ -59,7 +59,7 @@ function AccordionItem({
         <div className="flex items-start gap-3 sm:gap-4">
           <span
             className={`text-xs font-bold mt-0.5 shrink-0 transition-colors duration-300 ${
-              isOpen ? "text-red-500" : "text-slate-600 group-hover:text-slate-400"
+              isOpen ? "text-red-500" : "text-slate-400 group-hover:text-slate-600"
             }`}
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
@@ -67,7 +67,7 @@ function AccordionItem({
           </span>
           <h3
             className={`text-sm sm:text-base font-semibold transition-colors duration-300 ${
-              isOpen ? "text-white" : "text-slate-300 group-hover:text-white"
+              isOpen ? "text-slate-900" : "text-slate-700 group-hover:text-slate-900"
             }`}
           >
             {item.question}
@@ -79,12 +79,12 @@ function AccordionItem({
           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
             isOpen
               ? "bg-red-600 rotate-0"
-              : "bg-slate-800 group-hover:bg-slate-700 rotate-0"
+              : "bg-slate-100 group-hover:bg-slate-200 rotate-0"
           }`}
         >
           <svg
             className={`w-4 h-4 transition-transform duration-300 ${
-              isOpen ? "rotate-45 text-white" : "rotate-0 text-slate-400"
+              isOpen ? "rotate-45 text-white" : "rotate-0 text-slate-500"
             }`}
             fill="none"
             stroke="currentColor"
@@ -102,7 +102,7 @@ function AccordionItem({
         style={{ maxHeight: height }}
       >
         <div ref={contentRef} className="px-5 sm:px-6 pb-5 sm:pb-6 pl-12 sm:pl-16">
-          <p className="text-slate-400 text-sm leading-relaxed">{item.answer}</p>
+          <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@ export default function FAQ({ dict }: Props) {
     <section
       id="faq"
       ref={sectionRef}
-      className="py-16 sm:py-24 px-5 sm:px-6 bg-slate-950"
+      className="py-16 sm:py-24 px-5 sm:px-6 bg-slate-100"
     >
       <div className="mx-auto max-w-5xl">
         {/* Header */}
@@ -148,14 +148,14 @@ export default function FAQ({ dict }: Props) {
           }`}
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="h-[2px] w-8 bg-red-500 rounded-full" />
+            <span className="h-0.5 w-8 bg-red-500 rounded-full" />
             <p className="text-red-500 uppercase tracking-[0.2em] text-xs sm:text-sm font-bold">
               {dict.label}
             </p>
-            <span className="h-[2px] w-8 bg-red-500 rounded-full" />
+            <span className="h-0.5 w-8 bg-red-500 rounded-full" />
           </div>
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             {dict.title}

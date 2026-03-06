@@ -81,6 +81,11 @@
         "name": "Bodywork & Paint",
         "description": "Professional panel beating and auto painting to restore your car's original look.",
         "icon": "bodywork"
+      },
+      {
+        "name": "Auto Electrician",
+        "description": "Diagnostics and repair of electrical systems, headlights, alternators, starters, and auxiliary installations.",
+        "icon": "electrical"
       }
     ]
   },
@@ -170,7 +175,7 @@
     "copyright": "© 2025 Revicar — Auto Repair. All rights reserved."
   },
   "callBar": {
-    "label": "Need help? Call us now",
+    "label": "Need help?",
     "cta": "Call Now"
   }
 }

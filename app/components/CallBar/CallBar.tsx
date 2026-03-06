@@ -31,7 +31,7 @@ export default function CallBar({ dict, phone }: Props) {
         <span className="text-slate-400 text-xs truncate">{dict.label}</span>
         <a
           href={`tel:${cleanPhone}`}
-          className="relative flex items-center gap-2 shrink-0 rounded-full bg-red-600 px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 active:scale-95 transition-all duration-200"
+          className="relative flex items-center gap-2 shrink-0 rounded-full bg-red-600 px-2.5 py-1 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 active:scale-95 transition-all duration-200"
         >
           {/* Pulse ring */}
           <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-20" />
