@@ -30,7 +30,7 @@ export default async function Home({ params }: Props) {
         className="relative flex min-h-screen flex-col items-center justify-center text-white text-center px-5 sm:px-6 overflow-hidden"
       >
         <Image
-          src="/img/hero.png"
+          src="/img/hero.jpg"
           alt="Revicar — reparações automóveis"
           fill
           priority

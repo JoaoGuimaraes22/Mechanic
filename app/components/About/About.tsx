@@ -172,12 +172,12 @@ export default function About({ dict }: Props) {
 
           {/* Image — slides in from right */}
           <div
-            className={`relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 transition-all duration-1000 ease-out delay-500 ${
+            className={`relative aspect-4/3 rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 transition-all duration-1000 ease-out delay-500 ${
               visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
             }`}
           >
             <Image
-              src="/img/oficina.png"
+              src="/img/oficina.jpg"
               alt="Revicar — oficina de reparação automóvel"
               fill
               className="object-cover"

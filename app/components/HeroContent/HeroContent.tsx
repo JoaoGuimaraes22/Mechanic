@@ -61,13 +61,13 @@ export default function HeroContent({ dict, locale }: Props) {
       >
         <a
           href={`/${locale}#contact`}
-          className="rounded-full bg-red-600 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 hover:scale-105 active:scale-95 transition-all duration-200 min-w-[220px] text-center"
+          className="rounded-full bg-red-600 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:bg-red-500 hover:scale-105 active:scale-95 transition-all duration-200 min-w-55 text-center"
         >
           {dict.ctaPrimary}
         </a>
         <a
           href={`tel:${dict.phone.replace(/\s/g, "")}`}
-          className="rounded-full border-2 border-slate-400 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:border-white hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 min-w-[220px] text-center flex items-center justify-center gap-2"
+          className="rounded-full border-2 border-slate-400 px-8 py-3.5 text-sm font-semibold text-white uppercase tracking-wide hover:border-white hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 min-w-55 text-center flex items-center justify-center gap-2"
         >
           <svg
             className="w-4 h-4"
