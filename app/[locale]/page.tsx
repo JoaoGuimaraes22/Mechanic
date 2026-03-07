@@ -1,9 +1,7 @@
-import Image from "next/image";
 import { getDictionary } from "../../get-dictionary";
 import type { Locale } from "../../i18n-config";
 import Navbar from "../components/Navbar/Navbar";
 import HeroContent from "../components/HeroContent/HeroContent";
-import Brands from "../components/Brands/Brands";
 import About from "../components/About/About";
 import Services from "../components/Services/Services";
 import Reviews from "../components/Reviews/Reviews";
@@ -29,21 +27,12 @@ export default async function Home({ params }: Props) {
         id="hero"
         className="relative flex min-h-screen flex-col items-center justify-center text-white text-center px-5 sm:px-6 overflow-hidden"
       >
-        <Image
-          src="/img/hero.jpg"
-          alt="Revicar — reparações automóveis"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: "url('/img/hero.jpg')" }}
         />
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-black/45" />
         <HeroContent dict={dict.hero} locale={locale} />
-
-        {/* Brands bar pinned to bottom of hero */}
-        <div className="absolute bottom-0 left-0 right-0 z-10">
-          <Brands dict={dict.brands} />
-        </div>
       </section>
 
       <About dict={dict.about} />

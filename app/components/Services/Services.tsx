@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
 type ServiceItem = {
@@ -282,14 +281,7 @@ export default function Services({ dict }: Props) {
       ref={sectionRef}
       className="relative py-16 sm:py-24 overflow-hidden"
     >
-      <Image
-        src="/img/services.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-white/25" />
+      <div className="absolute inset-0 bg-white/90" />
       <div
         className={`relative z-10 transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -342,6 +334,12 @@ export default function Services({ dict }: Props) {
                 <div
                   className={`relative h-44 sm:h-48 bg-linear-to-br ${gradients[i % gradients.length]} rounded-t-2xl overflow-hidden`}
                 >
+                  <img
+                    src={`/img/services/services${i + 1}.jpg`}
+                    alt={item.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/30" />
                   {/* Number badge */}
                   <div className="absolute top-3 left-3 bg-red-600 rounded-lg w-10 h-10 flex items-center justify-center shadow-md">
                     <span
@@ -350,11 +348,6 @@ export default function Services({ dict }: Props) {
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                  </div>
-
-                  {/* Large faded decorative icon */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-15 scale-[3] text-white pointer-events-none">
-                    {icons[item.icon]}
                   </div>
                 </div>
 
@@ -394,6 +387,12 @@ export default function Services({ dict }: Props) {
               <div
                 className={`relative h-40 bg-linear-to-br ${gradients[i % gradients.length]} rounded-t-2xl overflow-hidden`}
               >
+                <img
+                  src={`/img/services/services${i + 1}.jpg`}
+                  alt={item.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute top-3 left-3 bg-red-600 rounded-lg w-10 h-10 flex items-center justify-center shadow-md">
                   <span
                     className="text-white font-bold text-sm"
@@ -401,9 +400,6 @@ export default function Services({ dict }: Props) {
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-15 scale-[3] text-white pointer-events-none">
-                  {icons[item.icon]}
                 </div>
               </div>
               <div className="flex justify-center -mt-7 relative z-10">

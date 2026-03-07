@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 type ReviewItem = {
@@ -59,14 +58,11 @@ export default function Reviews({ dict }: Props) {
       ref={sectionRef}
       className="relative py-16 sm:py-24 px-5 sm:px-6 overflow-hidden"
     >
-      <Image
-        src="/img/reviews.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        sizes="100vw"
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('/img/reviews.jpg')" }}
       />
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 mx-auto max-w-6xl">
         {/* Header */}
         <p
