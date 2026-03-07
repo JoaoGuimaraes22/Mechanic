@@ -289,7 +289,7 @@ export default function Services({ dict }: Props) {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-white/45" />
+      <div className="absolute inset-0 bg-white/25" />
       <div
         className={`relative z-10 transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

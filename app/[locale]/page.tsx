@@ -37,7 +37,7 @@ export default async function Home({ params }: Props) {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/25" />
         <HeroContent dict={dict.hero} locale={locale} />
 
         {/* Brands bar pinned to bottom of hero */}
